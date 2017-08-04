@@ -17,7 +17,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 0.12400007247924805
+                            "duration": 0.15899991989135742
                         }
                     },
                     {
@@ -30,7 +30,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 1.1520001888275146
+                            "duration": 0.31100010871887207
                         }
                     },
                     {
@@ -43,7 +43,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 0.7019999027252197
+                            "duration": 1.1999998092651367
                         }
                     },
                     {
@@ -56,7 +56,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 1.1140000820159912
+                            "duration": 0.19700002670288086
                         }
                     },
                     {
@@ -69,7 +69,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 0.2390000820159912
+                            "duration": 1.1370000839233398
                         }
                     },
                     {
@@ -82,7 +82,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 1.2119998931884766
+                            "duration": 0.1119999885559082
                         }
                     },
                     {
@@ -94,8 +94,9 @@
                             "arguments": []
                         },
                         "result": {
-                            "status": "passed",
-                            "duration": 1.0370001792907715
+                            "status": "failed",
+                            "duration": 1.0309998989105225,
+                            "error_message": "Assertion Failed: San diego places to go symbols on the map: expected value 13 actual value 0"
                         }
                     }
                 ],
@@ -131,7 +132,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 0.0009999275207519531
+                            "duration": 0.0
                         }
                     },
                     {
@@ -144,7 +145,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 0.685999870300293
+                            "duration": 0.7549998760223389
                         }
                     },
                     {
@@ -157,7 +158,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 1.8450000286102295
+                            "duration": 2.0280001163482666
                         }
                     },
                     {
@@ -170,7 +171,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 4.081000089645386
+                            "duration": 3.9089999198913574
                         }
                     },
                     {
@@ -183,7 +184,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 1.122999906539917
+                            "duration": 1.1760001182556152
                         }
                     },
                     {
@@ -196,7 +197,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 0.0
+                            "duration": 0.0009999275207519531
                         }
                     },
                     {
@@ -209,7 +210,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 1.062999963760376
+                            "duration": 1.0239999294281006
                         }
                     }
                 ],
@@ -245,7 +246,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 0.10199999809265137
+                            "duration": 0.08500003814697266
                         }
                     },
                     {
@@ -258,7 +259,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 0.05900001525878906
+                            "duration": 1.9479999542236328
                         }
                     },
                     {
@@ -271,7 +272,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 4.111999988555908
+                            "duration": 3.2730000019073486
                         }
                     },
                     {
@@ -284,7 +285,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 0.04800009727478027
+                            "duration": 0.05299997329711914
                         }
                     }
                 ],
@@ -320,7 +321,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 1.0769999027252197
+                            "duration": 0.09399986267089844
                         }
                     },
                     {
@@ -333,7 +334,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 0.11299991607666016
+                            "duration": 0.10899996757507324
                         }
                     },
                     {
@@ -346,7 +347,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 0.7089998722076416
+                            "duration": 0.7149999141693115
                         }
                     },
                     {
@@ -359,7 +360,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 1.1679999828338623
+                            "duration": 1.2079999446868896
                         }
                     }
                 ],
@@ -395,7 +396,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 0.6970000267028809
+                            "duration": 0.6110000610351562
                         }
                     },
                     {
@@ -413,7 +414,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 1.75
+                            "duration": 2.2160000801086426
                         }
                     },
                     {
@@ -456,7 +457,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 0.5290000438690186
+                            "duration": 0.5299999713897705
                         }
                     },
                     {
@@ -474,7 +475,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 1.7779998779296875
+                            "duration": 1.7839999198913574
                         }
                     },
                     {
@@ -517,7 +518,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 0.5240001678466797
+                            "duration": 0.5310001373291016
                         }
                     },
                     {
@@ -535,7 +536,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 1.8199999332427979
+                            "duration": 1.7879998683929443
                         }
                     },
                     {
@@ -589,7 +590,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 1.0329999923706055
+                            "duration": 1.0440001487731934
                         }
                     },
                     {
@@ -602,7 +603,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 1.1570000648498535
+                            "duration": 1.1679999828338623
                         }
                     },
                     {
@@ -615,7 +616,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 1.0769999027252197
+                            "duration": 1.069000005722046
                         }
                     }
                 ],
@@ -640,7 +641,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 1.8379998207092285
+                            "duration": 2.248000144958496
                         }
                     },
                     {
@@ -653,7 +654,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 2.1670000553131104
+                            "duration": 2.1519999504089355
                         }
                     },
                     {
@@ -666,7 +667,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 0.35899996757507324
+                            "duration": 0.07999992370605469
                         }
                     }
                 ],
@@ -691,7 +692,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 3.1540000438690186
+                            "duration": 3.1459999084472656
                         }
                     },
                     {
@@ -704,7 +705,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 0.40400004386901855
+                            "duration": 1.0480000972747803
                         }
                     },
                     {
@@ -717,7 +718,7 @@
                         },
                         "result": {
                             "status": "passed",
-                            "duration": 0.13699984550476074
+                            "duration": 0.125
                         }
                     }
                 ],
