@@ -8,6 +8,8 @@ Feature: add the arcgis layer from san diego about places to visit # add_arcgisl
     And I select the san diego layer from the panel             # steps\steps_add_arcgislayer_sandiego.py:32
     And I close the reference layer panel                       # steps\steps_add_arcgislayer_sandiego.py:37
     Then I see San Diego layer about places to go on the map    # steps\steps_add_arcgislayer_sandiego.py:43
+      Assertion Failed: San diego places to go symbols on the map: expected value 13 actual value 0
+
 
 Feature: Test the add lat and long feature # add_lat_long.feature:1
 
