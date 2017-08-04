@@ -30,6 +30,10 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
+*.json
+cucumberoutput.json
+resultoutput.json
+pretty.output
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
