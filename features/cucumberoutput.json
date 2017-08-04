@@ -1,0 +1,738 @@
+[
+    {
+        "elements": [
+            {
+                "name": "I will add the arcgis layer from the san diego",
+                "keyword": "Scenario",
+                "tags": [],
+                "uri": "add_arcgislayer_sandiego.feature",
+                "steps": [
+                    {
+                        "name": "I go to the Analytics menu",
+                        "keyword": "Given",
+                        "line": 4,
+                        "match": {
+                            "location": "steps\\steps_add_arcgislayer_sandiego.py:8",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.12400007247924805
+                        }
+                    },
+                    {
+                        "name": "I click on the Reference layer from the Analytics menu",
+                        "keyword": "When",
+                        "line": 5,
+                        "match": {
+                            "location": "steps\\steps_add_arcgislayer_sandiego.py:12",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 1.1520001888275146
+                        }
+                    },
+                    {
+                        "name": "I select the ArcGIS label in the Reference layer window",
+                        "keyword": "And",
+                        "line": 6,
+                        "match": {
+                            "location": "steps\\steps_add_arcgislayer_sandiego.py:17",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.7019999027252197
+                        }
+                    },
+                    {
+                        "name": "I enter the text San Diego in the search box",
+                        "keyword": "And",
+                        "line": 7,
+                        "match": {
+                            "location": "steps\\steps_add_arcgislayer_sandiego.py:25",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 1.1140000820159912
+                        }
+                    },
+                    {
+                        "name": "I select the san diego layer from the panel",
+                        "keyword": "And",
+                        "line": 8,
+                        "match": {
+                            "location": "steps\\steps_add_arcgislayer_sandiego.py:32",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.2390000820159912
+                        }
+                    },
+                    {
+                        "name": "I close the reference layer panel",
+                        "keyword": "And",
+                        "line": 9,
+                        "match": {
+                            "location": "steps\\steps_add_arcgislayer_sandiego.py:37",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 1.2119998931884766
+                        }
+                    },
+                    {
+                        "name": "I see San Diego layer about places to go on the map",
+                        "keyword": "Then",
+                        "line": 10,
+                        "match": {
+                            "location": "steps\\steps_add_arcgislayer_sandiego.py:43",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 1.0370001792907715
+                        }
+                    }
+                ],
+                "line": 3,
+                "type": "scenario",
+                "id": 1,
+                "description": ""
+            }
+        ],
+        "name": "add the arcgis layer from san diego about places to visit",
+        "keyword": "Feature",
+        "tags": [],
+        "uri": "add_arcgislayer_sandiego.feature",
+        "line": 1,
+        "id": 0,
+        "description": ""
+    },
+    {
+        "elements": [
+            {
+                "name": "The user adds features to the map using latitude and longitude.",
+                "keyword": "Scenario",
+                "tags": [],
+                "uri": "add_lat_long.feature",
+                "steps": [
+                    {
+                        "name": "I have loaded PowerBI and signed in as a free user",
+                        "keyword": "Given",
+                        "line": 4,
+                        "match": {
+                            "location": "steps\\steps_add_lat_long.py:6",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0009999275207519531
+                        }
+                    },
+                    {
+                        "name": "User drag the latitude field into the Latitude field well",
+                        "keyword": "When",
+                        "line": 5,
+                        "match": {
+                            "location": "steps\\steps_add_lat_long.py:12",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.685999870300293
+                        }
+                    },
+                    {
+                        "name": "I drag the longitude field into the Longitude field well",
+                        "keyword": "And",
+                        "line": 6,
+                        "match": {
+                            "location": "steps\\steps_add_lat_long.py:19",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 1.8450000286102295
+                        }
+                    },
+                    {
+                        "name": "I will make sure that latitude and longitude fields are not summarized",
+                        "keyword": "And",
+                        "line": 7,
+                        "match": {
+                            "location": "steps\\steps_add_lat_long.py:29",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 4.081000089645386
+                        }
+                    },
+                    {
+                        "name": "points should appear on the map in the correct lat/long position",
+                        "keyword": "Then",
+                        "line": 8,
+                        "match": {
+                            "location": "steps\\steps_add_lat_long.py:44",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 1.122999906539917
+                        }
+                    },
+                    {
+                        "name": "I go into edit mode",
+                        "keyword": "When",
+                        "line": 9,
+                        "match": {
+                            "location": "steps\\steps_add_lat_long.py:52",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.0
+                        }
+                    },
+                    {
+                        "name": "the toolbar should not have the Location type button",
+                        "keyword": "Then",
+                        "line": 10,
+                        "match": {
+                            "location": "steps\\steps_add_lat_long.py:57",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 1.062999963760376
+                        }
+                    }
+                ],
+                "line": 3,
+                "type": "scenario",
+                "id": 2,
+                "description": ""
+            }
+        ],
+        "name": "Test the add lat and long feature",
+        "keyword": "Feature",
+        "tags": [],
+        "uri": "add_lat_long.feature",
+        "line": 1,
+        "id": 1,
+        "description": ""
+    },
+    {
+        "elements": [
+            {
+                "name": "I will add USA density index demographic reference layer to the map.",
+                "keyword": "Scenario",
+                "tags": [],
+                "uri": "add_usa_demographics_reference_layer.feature",
+                "steps": [
+                    {
+                        "name": "I open the Analytics menu from the toolbar",
+                        "keyword": "Given",
+                        "line": 4,
+                        "match": {
+                            "location": "steps\\steps_add_usa_demographic_reference_layer.py:7",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.10199999809265137
+                        }
+                    },
+                    {
+                        "name": "I select the Reference layer from the Analytics menubar",
+                        "keyword": "When",
+                        "line": 5,
+                        "match": {
+                            "location": "steps\\steps_add_usa_demographic_reference_layer.py:11",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.05900001525878906
+                        }
+                    },
+                    {
+                        "name": "I select the demographic USA density index reference layer",
+                        "keyword": "And",
+                        "line": 6,
+                        "match": {
+                            "location": "steps\\steps_add_usa_demographic_reference_layer.py:16",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 4.111999988555908
+                        }
+                    },
+                    {
+                        "name": "I see that USA demographic density index reference layer on the map",
+                        "keyword": "Then",
+                        "line": 7,
+                        "match": {
+                            "location": "steps\\steps_add_usa_demographic_reference_layer.py:22",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.04800009727478027
+                        }
+                    }
+                ],
+                "line": 3,
+                "type": "scenario",
+                "id": 3,
+                "description": ""
+            }
+        ],
+        "name": "Add the USA density index demographic reference layer to the map",
+        "keyword": "Feature",
+        "tags": [],
+        "uri": "add_usa_demographics_reference_layer.feature",
+        "line": 1,
+        "id": 2,
+        "description": ""
+    },
+    {
+        "elements": [
+            {
+                "name": "I search for usa pizza place Pins",
+                "keyword": "Scenario",
+                "tags": [],
+                "uri": "pins_usa_pizza_place.feature",
+                "steps": [
+                    {
+                        "name": "I select the Analytics menu from the toolbar",
+                        "keyword": "Given",
+                        "line": 4,
+                        "match": {
+                            "location": "steps\\steps_pins_usa_place.py:7",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 1.0769999027252197
+                        }
+                    },
+                    {
+                        "name": "I select the Pins from the Analytics Menu",
+                        "keyword": "When",
+                        "line": 5,
+                        "match": {
+                            "location": "steps\\steps_pins_usa_place.py:11",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.11299991607666016
+                        }
+                    },
+                    {
+                        "name": "In the search box, I enter this text - Pizza place in USA",
+                        "keyword": "And",
+                        "line": 6,
+                        "match": {
+                            "location": "steps\\steps_pins_usa_place.py:17",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.7089998722076416
+                        }
+                    },
+                    {
+                        "name": "One Pin will be display on the map area",
+                        "keyword": "Then",
+                        "line": 7,
+                        "match": {
+                            "location": "steps\\steps_pins_usa_place.py:26",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 1.1679999828338623
+                        }
+                    }
+                ],
+                "line": 3,
+                "type": "scenario",
+                "id": 4,
+                "description": ""
+            }
+        ],
+        "name": "Test the Pins features of Power BI",
+        "keyword": "Feature",
+        "tags": [],
+        "uri": "pins_usa_pizza_place.feature",
+        "line": 1,
+        "id": 3,
+        "description": ""
+    },
+    {
+        "elements": [
+            {
+                "name": "Test map themes for Heat Map, Location Only, Clustering -- @1.1 ",
+                "keyword": "Scenario Outline",
+                "tags": [],
+                "uri": "select_themes_from_map_themes_panel.feature",
+                "steps": [
+                    {
+                        "name": "Customer opens the Map themes Panel",
+                        "keyword": "Given",
+                        "line": 4,
+                        "match": {
+                            "location": "steps\\select_themes_from_map_themes_panel.py:10",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.6970000267028809
+                        }
+                    },
+                    {
+                        "name": "Customer go to  \"Heat Map\" Map theme",
+                        "keyword": "When",
+                        "line": 5,
+                        "match": {
+                            "location": "steps\\select_themes_from_map_themes_panel.py:16",
+                            "arguments": [
+                                {
+                                    "name": "mapthemes",
+                                    "value": "\"Heat Map\""
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 1.75
+                        }
+                    },
+                    {
+                        "name": "Customer expects \"Heat Map\" map theme will open",
+                        "keyword": "Then",
+                        "line": 6,
+                        "match": {
+                            "location": "steps\\select_themes_from_map_themes_panel.py:24",
+                            "arguments": [
+                                {
+                                    "name": "mapthemes",
+                                    "value": "\"Heat Map\""
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.5019998550415039
+                        }
+                    }
+                ],
+                "line": 11,
+                "type": "scenario",
+                "id": 5,
+                "description": ""
+            },
+            {
+                "name": "Test map themes for Heat Map, Location Only, Clustering -- @1.2 ",
+                "keyword": "Scenario Outline",
+                "tags": [],
+                "uri": "select_themes_from_map_themes_panel.feature",
+                "steps": [
+                    {
+                        "name": "Customer opens the Map themes Panel",
+                        "keyword": "Given",
+                        "line": 4,
+                        "match": {
+                            "location": "steps\\select_themes_from_map_themes_panel.py:10",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.5290000438690186
+                        }
+                    },
+                    {
+                        "name": "Customer go to  \"Clustering\" Map theme",
+                        "keyword": "When",
+                        "line": 5,
+                        "match": {
+                            "location": "steps\\select_themes_from_map_themes_panel.py:16",
+                            "arguments": [
+                                {
+                                    "name": "mapthemes",
+                                    "value": "\"Clustering\""
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 1.7779998779296875
+                        }
+                    },
+                    {
+                        "name": "Customer expects \"Clustering\" map theme will open",
+                        "keyword": "Then",
+                        "line": 6,
+                        "match": {
+                            "location": "steps\\select_themes_from_map_themes_panel.py:24",
+                            "arguments": [
+                                {
+                                    "name": "mapthemes",
+                                    "value": "\"Clustering\""
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.501000165939331
+                        }
+                    }
+                ],
+                "line": 12,
+                "type": "scenario",
+                "id": 6,
+                "description": ""
+            },
+            {
+                "name": "Test map themes for Heat Map, Location Only, Clustering -- @1.3 ",
+                "keyword": "Scenario Outline",
+                "tags": [],
+                "uri": "select_themes_from_map_themes_panel.feature",
+                "steps": [
+                    {
+                        "name": "Customer opens the Map themes Panel",
+                        "keyword": "Given",
+                        "line": 4,
+                        "match": {
+                            "location": "steps\\select_themes_from_map_themes_panel.py:10",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.5240001678466797
+                        }
+                    },
+                    {
+                        "name": "Customer go to  \"Location Only\" Map theme",
+                        "keyword": "When",
+                        "line": 5,
+                        "match": {
+                            "location": "steps\\select_themes_from_map_themes_panel.py:16",
+                            "arguments": [
+                                {
+                                    "name": "mapthemes",
+                                    "value": "\"Location Only\""
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 1.8199999332427979
+                        }
+                    },
+                    {
+                        "name": "Customer expects \"Location Only\" map theme will open",
+                        "keyword": "Then",
+                        "line": 6,
+                        "match": {
+                            "location": "steps\\select_themes_from_map_themes_panel.py:24",
+                            "arguments": [
+                                {
+                                    "name": "mapthemes",
+                                    "value": "\"Location Only\""
+                                }
+                            ]
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.500999927520752
+                        }
+                    }
+                ],
+                "line": 13,
+                "type": "scenario",
+                "id": 7,
+                "description": ""
+            }
+        ],
+        "name": "Customer will switch between different available Map themes in Map Themes Panel",
+        "keyword": "Feature",
+        "tags": [],
+        "uri": "select_themes_from_map_themes_panel.feature",
+        "line": 1,
+        "id": 4,
+        "description": ""
+    },
+    {
+        "elements": [
+            {
+                "name": "Change basemap to streetmap basemap",
+                "keyword": "Scenario",
+                "tags": [],
+                "uri": "switch_between_basemaps.feature",
+                "steps": [
+                    {
+                        "name": "user visit the Basemap Panel",
+                        "keyword": "Given",
+                        "line": 4,
+                        "match": {
+                            "location": "steps\\switch_between_basemaps.py:8",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 1.0329999923706055
+                        }
+                    },
+                    {
+                        "name": "select streetmap basemap from the Basemap Panel",
+                        "keyword": "When",
+                        "line": 5,
+                        "match": {
+                            "location": "steps\\switch_between_basemaps.py:14",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 1.1570000648498535
+                        }
+                    },
+                    {
+                        "name": "user will see that existing basemap will change to streetmap basemap",
+                        "keyword": "Then",
+                        "line": 6,
+                        "match": {
+                            "location": "steps\\switch_between_basemaps.py:22",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 1.0769999027252197
+                        }
+                    }
+                ],
+                "line": 3,
+                "type": "scenario",
+                "id": 6,
+                "description": ""
+            },
+            {
+                "name": "User will change basemap from streetmap to lightcanvas basemap",
+                "keyword": "Scenario",
+                "tags": [],
+                "uri": "switch_between_basemaps.feature",
+                "steps": [
+                    {
+                        "name": "Basemap panel is open for the user",
+                        "keyword": "Given",
+                        "line": 10,
+                        "match": {
+                            "location": "steps\\switch_between_basemaps.py:31",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 1.8379998207092285
+                        }
+                    },
+                    {
+                        "name": "select lightcanvas basemap from the Basemap Panel",
+                        "keyword": "When",
+                        "line": 11,
+                        "match": {
+                            "location": "steps\\switch_between_basemaps.py:37",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 2.1670000553131104
+                        }
+                    },
+                    {
+                        "name": "user will see that existing basemap will change to lightcanvas basemap",
+                        "keyword": "Then",
+                        "line": 12,
+                        "match": {
+                            "location": "steps\\switch_between_basemaps.py:46",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.35899996757507324
+                        }
+                    }
+                ],
+                "line": 9,
+                "type": "scenario",
+                "id": 7,
+                "description": ""
+            },
+            {
+                "name": "User will change basemap from lightcanvas to darkgraycanvas basemap",
+                "keyword": "Scenario",
+                "tags": [],
+                "uri": "switch_between_basemaps.feature",
+                "steps": [
+                    {
+                        "name": "select darkgraycanvas basemap from the Basemap Panel",
+                        "keyword": "When",
+                        "line": 16,
+                        "match": {
+                            "location": "steps\\switch_between_basemaps.py:54",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 3.1540000438690186
+                        }
+                    },
+                    {
+                        "name": "user will see that existing basemap will change to darkgraycanvas basemap",
+                        "keyword": "Then",
+                        "line": 17,
+                        "match": {
+                            "location": "steps\\switch_between_basemaps.py:63",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.40400004386901855
+                        }
+                    },
+                    {
+                        "name": "user will close the Basemap panel",
+                        "keyword": "Then",
+                        "line": 18,
+                        "match": {
+                            "location": "steps\\switch_between_basemaps.py:69",
+                            "arguments": []
+                        },
+                        "result": {
+                            "status": "passed",
+                            "duration": 0.13699984550476074
+                        }
+                    }
+                ],
+                "line": 15,
+                "type": "scenario",
+                "id": 8,
+                "description": ""
+            }
+        ],
+        "name": "Check the availability of different basemaps in Basemap Panel",
+        "keyword": "Feature",
+        "tags": [],
+        "uri": "switch_between_basemaps.feature",
+        "line": 1,
+        "id": 5,
+        "description": ""
+    }
+]

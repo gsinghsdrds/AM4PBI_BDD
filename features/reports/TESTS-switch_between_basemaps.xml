@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuite errors="0" failures="0" name="switch_between_basemaps.Check the availability of different basemaps in Basemap Panel" skipped="0" tests="3" time="21.603"><testcase classname="switch_between_basemaps.Check the availability of different basemaps in Basemap Panel" name="Change basemap to streetmap basemap" status="passed" time="16.994"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: Change basemap to streetmap basemap
+    Given user visit the Basemap Panel ... passed in 14.788s
+    When select streetmap basemap from the Basemap Panel ... passed in 1.128s
+    Then user will see that existing basemap will change to streetmap basemap ... passed in 1.078s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="switch_between_basemaps.Check the availability of different basemaps in Basemap Panel" name="User will change basemap from streetmap to lightcanvas basemap" status="passed" time="2.276"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: User will change basemap from streetmap to lightcanvas basemap
+    Given Basemap panel is open for the user ... passed in 1.022s
+    When select lightcanvas basemap from the Basemap Panel ... passed in 1.194s
+    Then user will see that existing basemap will change to lightcanvas basemap ... passed in 0.060s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="switch_between_basemaps.Check the availability of different basemaps in Basemap Panel" name="User will change basemap from lightcanvas to darkgraycanvas basemap" status="passed" time="2.333"><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario: User will change basemap from lightcanvas to darkgraycanvas basemap
+    When select darkgraycanvas basemap from the Basemap Panel ... passed in 1.112s
+    Then user will see that existing basemap will change to darkgraycanvas basemap ... passed in 0.083s
+    Then user will close the Basemap panel ... passed in 1.138s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>

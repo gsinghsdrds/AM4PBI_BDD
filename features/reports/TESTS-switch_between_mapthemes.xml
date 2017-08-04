@@ -1,0 +1,50 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<testsuite errors="0" failures="3" name="switch_between_mapthemes.Check the availability of different Map Themes in Map Themes Panel" skipped="0" tests="3" time="0.0"><testcase classname="switch_between_mapthemes.Check the availability of different Map Themes in Map Themes Panel" name="Correrctly switch between different available map themes in map themes panel -- @1.1 " status="failed" time="0.0"><failure message="None" type="NoneType">
+<![CDATA[
+Failing step: Given User opens the Map Themes Panel ... undefined in 0.000s
+Location: switch_between_mapthemes.feature:5
+None]]>
+</failure><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Correrctly switch between different available map themes in map themes panel -- @1.1 
+    Given User opens the Map Themes Panel ... undefined in 0.000s
+    When User switch between different available Location Only ... undefined in 0.000s
+    Then User should see Location Only on the map area. ... undefined in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="switch_between_mapthemes.Check the availability of different Map Themes in Map Themes Panel" name="Correrctly switch between different available map themes in map themes panel -- @1.2 " status="failed" time="0.0"><failure message="None" type="NoneType">
+<![CDATA[
+Failing step: Given User opens the Map Themes Panel ... undefined in 0.000s
+Location: switch_between_mapthemes.feature:5
+None]]>
+</failure><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Correrctly switch between different available map themes in map themes panel -- @1.2 
+    Given User opens the Map Themes Panel ... undefined in 0.000s
+    When User switch between different available Heat Map ... undefined in 0.000s
+    Then User should see Heat Map on the map area. ... undefined in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase><testcase classname="switch_between_mapthemes.Check the availability of different Map Themes in Map Themes Panel" name="Correrctly switch between different available map themes in map themes panel -- @1.3 " status="failed" time="0.0"><failure message="None" type="NoneType">
+<![CDATA[
+Failing step: Given User opens the Map Themes Panel ... undefined in 0.000s
+Location: switch_between_mapthemes.feature:5
+None]]>
+</failure><system-out>
+<![CDATA[
+@scenario.begin
+  Scenario Outline: Correrctly switch between different available map themes in map themes panel -- @1.3 
+    Given User opens the Map Themes Panel ... undefined in 0.000s
+    When User switch between different available Clustering ... undefined in 0.000s
+    Then User should see Clustering on the map area. ... undefined in 0.000s
+
+@scenario.end
+--------------------------------------------------------------------------------
+]]>
+</system-out></testcase></testsuite>
