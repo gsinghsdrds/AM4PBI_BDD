@@ -3,12 +3,18 @@ __pycache__/
 *.py[cod]
 *$py.class
 
-# C extensions
+# C extensions / Python compile file / xml files
 *.so
+*.pyc
+*.xml
+*.json
+*.xml.orig
+*.iml
 
 # Distribution / packaging
 .Python
 env/
+.idea/
 build/
 develop-eggs/
 dist/
