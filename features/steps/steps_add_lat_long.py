@@ -38,7 +38,7 @@ def step_fields_not_summarized(context):
         "//field-well-bucket[@ng-repeat='bucket in viewModel.buckets'][3]//field-well-field[contains(@id,'container')]/li/h2/button[1]").click()
     UtilityHelperClass(context.browser).wait_interval(0.5)
     context.browser.find_element_by_xpath(dont_summarize_string).click()
-    UtilityHelperClass(context.browser).wait_interval(1)
+    UtilityHelperClass(context.browser).wait_interval(2)
 
 
 @then("points should appear on the map in the correct lat/long position")

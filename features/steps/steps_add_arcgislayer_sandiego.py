@@ -37,7 +37,7 @@ def steps_select_san_diego_layer_from_panel(context):
 @when("I close the reference layer panel")
 def steps_close_the_reference_layer_panel(context):
     ActionChains(context.browser).move_to_element(context.browser.find_element_by_xpath("//div[@class='esriMapsSidePanelButton esriMapsClose'][@title='Close']")).click().perform()
-    UtilityHelperClass(context.browser).selenium_wait_interval(1)
+    UtilityHelperClass(context.browser).selenium_wait_interval(2)
 
 
 @then("I see San Diego layer about places to go on the map")
