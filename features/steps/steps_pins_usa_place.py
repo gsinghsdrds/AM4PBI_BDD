@@ -1,12 +1,14 @@
 from behave import *
 from commonfiles.utility import UtilityHelperClass
 from selenium.webdriver.common.keys import Keys
+from selenium.webdriver.common.action_chains import ActionChains
 use_step_matcher("re")
 
 
 @given("I select the Analytics menu from the toolbar")
 def step_i_select_analytics_toolbar(context):
-    context.browser.find_element_by_xpath(".//*[starts-with(@id, 'uniqName')][2]/div/span/span[1]").click()
+    #context.browser.find_element_by_xpath(".//*[starts-with(@id, 'uniqName')][2]/div/span/span[1]").click()
+    ActionChains(context.browser).move_to_element(context.browser.find_element_by_xpath(".//*[starts-with(@id, 'uniqName')][2]/div/span/span[1]")).click().perform()
 
 @when("I select the Pins from the Analytics Menu")
 def step_driv_time_from_analytics_menu(context):

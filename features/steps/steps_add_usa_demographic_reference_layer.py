@@ -6,7 +6,8 @@ use_step_matcher("re")
 
 @given("I open the Analytics menu from the toolbar")
 def step_i_select_analytics_tool_from_toolbar(context):
-    context.browser.find_element_by_xpath(".//*[starts-with(@id, 'uniqName')][2]/div/span/span[1]").click()
+    #context.browser.find_element_by_xpath(".//*[starts-with(@id, 'uniqName')][2]/div/span/span[1]").click()
+    ActionChains(context.browser).move_to_element(context.browser.find_element_by_xpath(".//*[starts-with(@id, 'uniqName')][2]/div/span/span[1]")).click().perform()
 
 @when("I select the Reference layer from the Analytics menubar")
 def step_referencelayer_from_analytics_menu(context):
