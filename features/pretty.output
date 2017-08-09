@@ -2,14 +2,12 @@ Feature: add the arcgis layer from san diego about places to visit # add_arcgisl
 
   Scenario: I will add the arcgis layer from the san diego      # add_arcgislayer_sandiego.feature:3
     Given I go to the Analytics menu                            # steps\steps_add_arcgislayer_sandiego.py:8
-    When I click on the Reference layer from the Analytics menu # steps\steps_add_arcgislayer_sandiego.py:12
-    And I select the ArcGIS label in the Reference layer window # steps\steps_add_arcgislayer_sandiego.py:17
-    And I enter the text San Diego in the search box            # steps\steps_add_arcgislayer_sandiego.py:25
-    And I select the san diego layer from the panel             # steps\steps_add_arcgislayer_sandiego.py:32
-    And I close the reference layer panel                       # steps\steps_add_arcgislayer_sandiego.py:37
-    Then I see San Diego layer about places to go on the map    # steps\steps_add_arcgislayer_sandiego.py:43
-      Assertion Failed: San diego places to go symbols on the map: expected value 13 actual value 0
-
+    When I click on the Reference layer from the Analytics menu # steps\steps_add_arcgislayer_sandiego.py:13
+    And I select the ArcGIS label in the Reference layer window # steps\steps_add_arcgislayer_sandiego.py:18
+    And I enter the text San Diego in the search box            # steps\steps_add_arcgislayer_sandiego.py:26
+    And I select the san diego layer from the panel             # steps\steps_add_arcgislayer_sandiego.py:33
+    And I close the reference layer panel                       # steps\steps_add_arcgislayer_sandiego.py:38
+    Then I see San Diego layer about places to go on the map    # steps\steps_add_arcgislayer_sandiego.py:44
 
 Feature: Test the add lat and long feature # add_lat_long.feature:1
 
@@ -26,17 +24,17 @@ Feature: Add the USA density index demographic reference layer to the map # add_
 
   Scenario: I will add USA density index demographic reference layer to the map.  # add_usa_demographics_reference_layer.feature:3
     Given I open the Analytics menu from the toolbar                              # steps\steps_add_usa_demographic_reference_layer.py:7
-    When I select the Reference layer from the Analytics menubar                  # steps\steps_add_usa_demographic_reference_layer.py:11
-    And I select the demographic USA density index reference layer                # steps\steps_add_usa_demographic_reference_layer.py:16
-    Then I see that USA demographic density index reference layer on the map      # steps\steps_add_usa_demographic_reference_layer.py:22
+    When I select the Reference layer from the Analytics menubar                  # steps\steps_add_usa_demographic_reference_layer.py:12
+    And I select the demographic USA density index reference layer                # steps\steps_add_usa_demographic_reference_layer.py:17
+    Then I see that USA demographic density index reference layer on the map      # steps\steps_add_usa_demographic_reference_layer.py:23
 
 Feature: Test the Pins features of Power BI # pins_usa_pizza_place.feature:1
 
   Scenario: I search for usa pizza place Pins                     # pins_usa_pizza_place.feature:3
-    Given I select the Analytics menu from the toolbar            # steps\steps_pins_usa_place.py:7
-    When I select the Pins from the Analytics Menu                # steps\steps_pins_usa_place.py:11
-    And In the search box, I enter this text - Pizza place in USA # steps\steps_pins_usa_place.py:17
-    Then One Pin will be display on the map area                  # steps\steps_pins_usa_place.py:26
+    Given I select the Analytics menu from the toolbar            # steps\steps_pins_usa_place.py:8
+    When I select the Pins from the Analytics Menu                # steps\steps_pins_usa_place.py:13
+    And In the search box, I enter this text - Pizza place in USA # steps\steps_pins_usa_place.py:19
+    Then One Pin will be display on the map area                  # steps\steps_pins_usa_place.py:28
 
 Feature: Customer will switch between different available Map themes in Map Themes Panel # select_themes_from_map_themes_panel.feature:1
 

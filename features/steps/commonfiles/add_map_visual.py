@@ -5,7 +5,7 @@
 # Copyright:   (c) Esri 2017
 #----------------------------------------------------------------------------------------------------------------
 
-import os
+import os, sys
 from commonfiles_error_display import print_error_msg
 from configurefileparser import ConfigFileParser
 from utility import UtilityHelperClass
@@ -35,23 +35,24 @@ class Add_Map_Visual(object):
         except Exception as e:
             print_error_msg(e)
 
+
     def select_import_button(context):
         try:
             UtilityHelperClass(context.browser).wait_interval(1)
             context.browser.find_element_by_xpath("//*[text()='Import']").click()
         except Exception as e:
             print_error_msg(e)
-            
-            
+
     def add_pbix_package(context, package):
         try:
-            cmd = "C:\\AutoIt3\\Chrome.exe "+package
+            cmd = r"C:\\AutoIt3\\Chrome.exe "+package
             #cmd = "C:\\AutoIt3\\esriviz_ff.exe " + package
             os.system(cmd)
             UtilityHelperClass(context.browser).wait_interval(6)
             
         except Exception as e:
             print_error_msg(e)
+            sys.exit(2)
         
     
     
