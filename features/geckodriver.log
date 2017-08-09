@@ -1,20 +1,23 @@
-1501882362164	geckodriver	INFO	Listening on 127.0.0.1:4083
-1501882364189	mozprofile::profile	INFO	Using profile path C:\Windows\TEMP\rust_mozprofile.2KFNqohhinpY
-1501882364202	geckodriver::marionette	INFO	Starting browser C:\Program Files (x86)\Mozilla Firefox\firefox.exe with args []
-1501882364281	geckodriver::marionette	INFO	Connecting to Marionette on localhost:4090
-1501882365386	Marionette	WARN	Deprecated preference marionette.defaultPrefs.enabled detected, please use marionette.enabled
-1501882368027	Marionette	INFO	Listening on port 4090
-1501882368285	Marionette	WARN	TLS certificate errors will be ignored for this session
-nored for this session
-1501809305689	Marionette	INFO	Ceased listening
-800] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
-[Child 6800] WARNING: pipe error: 109: file c:/builds/moz2_slave/m-rel-w32-00000000000000000000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1502235659287	geckodriver	INFO	Listening on 127.0.0.1:6153
+1502235661326	mozprofile::profile	INFO	Using profile path C:\Windows\TEMP\rust_mozprofile.rsBKv2BNqO8X
+1502235661338	geckodriver::marionette	INFO	Starting browser C:\Program Files\Mozilla Firefox\firefox.exe with args []
+1502235661364	geckodriver::marionette	INFO	Connecting to Marionette on localhost:6160
+1502235662093	Marionette	INFO	Listening on port 6160
+1502235662418	Marionette	WARN	TLS certificate errors will be ignored for this session
 
-###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C0092,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
 
-00000/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
 
-###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C0085,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
 
-r: cannot send/recv
+JavaScript error: resource://app/modules/ContentCrashHandlers.jsm, line 137: TypeError: browser.permanentKey is not a non-null object
 
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C0092,name=PBrowser::Msg_UpdateNativeWindowHandle) Channel error: cannot send/recv
+
+
+###!!! [Parent][MessageChannel] Error: (msgtype=0x2C0085,name=PBrowser::Msg_Destroy) Channel error: cannot send/recv
+
+s.bundle.min.js%3A35%3A236%0Ab%40https%3A%2F%2Fpowerbi-df.analysis-df.windows.net%2F13.0.2243.0%2Fscripts%2Fpowerbiportal.dependencies.externals.bundle.min.js%3A34%3A282%0AAe%2F%3C%2F%3C%40https%3A%2F%2Fpowerbi-df.analysis-df.windows.net%2F13.0.2243.0%2Fscripts%2Fpowerbiportal.dependencies.externals.bundle.min.js%3A35%3A20%0Ag%2F%3C%40https%3A%2F%2Fpowerbi-df.analysis-df.windows.net%2F13.0.2243.0%2Fscripts%2Fpowerbiportal.dependencies.externals.bundle.min.js%3A50%3A17%0Aq%40https%3A%2F%2Fpowerbi-df.analysis-df.windows.net%2F13.0.2243.0%2Fscripts%2Fpowerbiportal.dependencies.externals.bundle.min.js%3A17%3A357%0Ag%40https%3A%2F%2Fpowerbi-df.analysis-df.windows.net%2F13.0.2243.0%2Fscripts%2Fpowerbiportal.dependencies.externals.bundle.min.js%3A49%3A382%0Aeb%40https%3A%2F%2Fpowerbi-df.analysis-df.windows.net%2F13.0.2243.0%2Fscripts%2Fpowerbiportal.dependencies.externals.bundle.min.js%3A53%3A387%0AIc%2Fc%40https%3A%2F%2Fpowerbi-df.analysis-df.windows.net%2F13.0.2243.0%2Fscripts%2Fpowerbiportal.dependencies.externals.bundle.min.js%3A31%3A19%0AIc%40https%3A%2F%2Fpowerbi-df.analysis-df.windows.net%2F13.0.2243.0%2Fscripts%2Fpowerbiportal.dependencies.externals.bundle.min.js%3A31%3A334%0Aa.bootstrap%40https%3A%2F%2Fpowerbi-df.analysis-df.windows.net%2F13.0.2243.0%2Fscripts%2Fpowerbiportal.dependencies.externals.bundle.min.js%3A1011%3A7843%0A%40https%3A%2F%2Fpowerbi-df.analysis-df.windows.net%2F%3FapprovedResourcesDisabled%3Dtrue%3A163%3A1573%0A
+JavaScript error: chrome://marionette/content/listener.js, line 1060: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIWebProgress.removeProgressListener]
+1502230467650	Marionette	INFO	New connections will no longer be accepted
+[Child 7072] ###!!! ABORT: Aborting on channel error.: file c:/builds/moz2_slave/m-rel-w64-00000000000000000000/build/src/ipc/glue/MessageChannel.cpp, line 2143
