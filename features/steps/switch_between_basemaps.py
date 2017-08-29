@@ -72,6 +72,3 @@ def step_impl(context):
     context.browser.find_element_by_xpath("//div[@class='esriMapsSidePanelButton esriMapsClose'][@title='Close']").click()
 
 
-
-
-
