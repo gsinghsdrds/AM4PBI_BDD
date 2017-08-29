@@ -5,6 +5,7 @@ use_step_matcher("re")
 
 @given("I have loaded PowerBI and signed in as a free user")
 def step_i_loaded_data_powebi(context):
+    UtilityHelperClass(context.browser).wait_interval(1)
     """data is already loaded to the mafp"""
     #context.browser.find_element_by_xpath(".//*[@id='pvExplorationHost']/div/div/div/div[1]/div[2]/div/ul/li[1]/button").click()
     pass

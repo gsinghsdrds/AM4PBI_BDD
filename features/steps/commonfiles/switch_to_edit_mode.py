@@ -4,6 +4,7 @@
 # ----------------------------------------------------------------------------------------------------------------
 
 from commonfiles_error_display import print_error_msg
+from utility import UtilityHelperClass
 
 
 class Switch_Edit_Mode(object):
@@ -23,8 +24,10 @@ class Switch_Edit_Mode(object):
             context.browser.implicitly_wait(1)
             #context.browser.switch_to_frame(context.browser.find_element_by_xpath(
             #    ".//iframe[@class='visual-sandbox'][@sandbox='allow-same-origin allow-popups allow-scripts']"))
+            'Switch to Esri Viz iframe'
             iframe = context.browser.find_element_by_tag_name('iframe')
             context.browser.switch_to_frame(iframe)
+            UtilityHelperClass(context.browser).wait_interval(1)
 
         except Exception as e:
             print_error_msg(e)

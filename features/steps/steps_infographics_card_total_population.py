@@ -7,6 +7,7 @@ use_step_matcher("re")
 
 @given("Customer goes to the Analytics menu")
 def step_i_select_analytics_toolbar(context):
+    UtilityHelperClass(context.browser).wait_interval(1)
     ActionChains(context.browser).move_to_element(context.browser.find_element_by_xpath(".//*[starts-with(@id, 'uniqName')][2]/div/span/span[1]")).click().perform()
 
 @when("Customer selects Infographics from the Analytics menu")

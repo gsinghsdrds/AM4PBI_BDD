@@ -9,6 +9,7 @@ use_step_matcher("parse")
 
 @given(u'Customer opens the Map themes Panel')
 def step_customer_opens_map_themes_panel(context):
+    UtilityHelperClass(context.browser).wait_interval(1)
     mapthemepanel = context.browser.find_element_by_xpath("//*[contains(text(),'Map theme')]")
     context.browser.execute_script("arguments[0].click();", mapthemepanel)
     UtilityHelperClass(context.browser).wait_interval(0.5)

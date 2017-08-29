@@ -2,30 +2,35 @@
 # -*- coding: utf-8 -*-
 
 "Program starts from environment.py file"
-
-import time
-from steps.commonfiles import add_data, add_map_visual, select_data_fields
-from steps.commonfiles.loginpage import LoginPage
+import sys, time
 from selenium import webdriver
 from selenium.webdriver.support.ui import WebDriverWait
-from steps.commonfiles import switch_to_edit_mode
 
-packname = "abc"
+from steps.commonfiles import add_data, add_map_visual, select_data_fields
+from steps.commonfiles import switch_to_edit_mode
+from steps.commonfiles.loginpage import LoginPage
+from steps import add_dataset_import_custom_visual
+from selenium.webdriver.common.action_chains import ActionChains
+
+
+
+#Global values
+dataseturl = "https://powerbi-df.analysis-df.windows.net/groups/me/contentlist/datasets?approvedResourcesDisabled=true"
+
 
 def before_all(context):
      print("Executing before all")
-     #try:
-     #   context.config.userdata['buildnum']
-     #except KeyError:
-     #    context.config.userdata['buildnum'] = r"\\devtfs2012la\PowerBIPackages\freelunch.esri.com\powerbi\1.0.98.884"
-     #    pass
 
      # Assign Buildnum path to package variable
      package = context.config.userdata['buildnum']
      print ("Package Path:", package)
 
-     #if not package:
-     #    sys.exit()
+     # If no package path is specified, then exit the program
+     if not package:
+          sys.exit(2)
+
+     with open("package.cfg", 'w') as f:
+         f.write(package)
 
      # Initiate Selenium Web Driver
      context.browser = webdriver.Chrome()
@@ -63,19 +68,51 @@ def after_all(context):
     print("Executing after all")
 
 
-#def before_feature(context, feature):
-#     print("Before feature\n")
+def before_feature(context, feature):
+    """ Create a drive time and radius around a location in USA"""
 
+    #Read the package name
+    with open("package.cfg") as f:
+        packageurl= f.readlines()
+
+    if (feature.name == 'create a drive time and radius around a location in USA'):
+        context.browser.switch_to.default_content()
+        #context.browser.switch_to.default_content()
+        context.browser.find_element_by_xpath("//*[contains(@title,'Get Data')]").click()
+        #context.browser.find_element_by_xpath("html/body/div[2]/div/div/div/div[4]/input[2]").click()
+        ActionChains(context.browser).move_to_element(context.browser.find_element_by_xpath("//*[@class='infonav-modalContainerHost']/div/div/div/div[4]/input[2]")).click().perform()
+        context.browser.implicitly_wait(1)
+        context.browser.get(dataseturl)
+        context.browser.implicitly_wait(1)
+        add_data.AddData(context.browser).adddata_enter_datafilename("USA_Cities")
+        add_dataset_import_custom_visual.AddDataFileImportCustomVisual(context.browser).add_datafile_loadesriviz(packageurl[0])
+
+
+#     print("Before feature\n")
 #Scenario level objects are popped off context when scenario exits
 #def before_scenario(context,scenario):
-
 #    print("Before scenario\n")
-
 #def after_scenario(context,scenario):
 #    print("After scenario\n")
 
-#def after_feature(context,feature):
-#    print("\nAfter feature")
+
+
+def after_feature(context,feature):
+    print("\nAfter feature")
+    context.browser.implicitly_wait(1)
+    #Read the package name
+    with open("package.cfg") as f:
+        packageurl = f.readlines()
+
+    if (feature.name == 'create a drive time and radius around a location in USA'):
+        context.browser.switch_to.default_content()
+        context.browser.find_element_by_xpath("//*[contains(@title,'Get Data')]").click()
+        ActionChains(context.browser).move_to_element(context.browser.find_element_by_xpath("//*[@class='infonav-modalContainerHost']/div/div/div/div[4]/input[2]")).click().perform()
+        context.browser.implicitly_wait(1)
+        context.browser.get(dataseturl)
+        context.browser.implicitly_wait(1)
+        add_data.AddData(context.browser).adddata_enter_datafilename("sample customer data")
+        add_dataset_import_custom_visual.AddDataFileImportCustomVisual(context.browser).add_datafile_loadesriviz(packageurl[0])
 
 
 

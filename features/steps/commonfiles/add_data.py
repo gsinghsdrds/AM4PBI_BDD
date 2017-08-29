@@ -16,7 +16,8 @@ class AddData(object):
         
     def adddata_specify_contentlist_url(context):
         try:
-            url = 'https://powerbi-df.analysis-df.windows.net/groups//contentlist?approvedResourcesDisabled=true'
+            #url = 'https://powerbi-df.analysis-df.windows.net/groups//contentlist?approvedResourcesDisabled=true'
+            url = 'https://powerbi-df.analysis-df.windows.net/groups/me/contentlist/datasets?approvedResourcesDisabled=true'
             context.browser.get(url)
         except Exception as e:
             print ("Content list url is not accessible: {0}", url)
@@ -26,7 +27,9 @@ class AddData(object):
     def adddata_open_dataset_page(context):
         try:
             'select the Datasets tab on the page'
-            #context.browser.find_element_by_xpath("//*[text()='Datasets']").click()
+            UtilityHelperClass(context.browser).wait_interval(1)
+            #elem = context.browser.find_element_by_xpath("//*[text()='Datasets']").click()
+            #context.browser.execute_script("return arguments[0].click();", elem)
             context.browser.find_element_by_xpath(".//*[@id='contentListLandingContainer']//div[3]/div[1]/div[4]").click()
             UtilityHelperClass(context.browser).wait_interval(2)
         except Exception as e:
@@ -51,5 +54,4 @@ class AddData(object):
             print ("Unable to open the Dataset.")
             print_error_msg(e)
     
-  
-  
+
