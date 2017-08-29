@@ -10,6 +10,8 @@ __pycache__/
 *.iml
 *.xml.orig
 *.json
+*.cfg
+
 
 # Distribution / packaging
 .Python
@@ -34,6 +36,7 @@ wheels/
 cucumberoutput.json
 resultoutput.json
 pretty.output
+package.cfg
 
 # PyInstaller
 #  Usually these files are written by a python script from a template
