@@ -4,9 +4,7 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.common.action_chains import ActionChains
 
 
-
 use_step_matcher("parse")
-
 
 @given("I load the USA_Cities dataset to the Esri Viz")
 def step_i_select_analytics_toolbar(context):
