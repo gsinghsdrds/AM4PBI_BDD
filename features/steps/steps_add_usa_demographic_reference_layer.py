@@ -17,7 +17,8 @@ def step_referencelayer_from_analytics_menu(context):
 
 @when("I select the demographic USA density index reference layer")
 def step_select_the_demographic_usa_density_index_reference_layer(context):
-    context.browser.find_element_by_xpath("//*[contains(@id,'dojox_mvc_Templated')]/div/div[2]/div[2]/div/div[3]/div/input").click()
+    #ActionChains(context.browser).move_to_element(context.browser.find_element_by_xpath(".//*[@id='dojox_mvc_Templated_0']/div/div[2]/div[3]/div/div[3]/div/input")).click().perform()
+    ActionChains(context.browser).move_to_element(context.browser.find_element_by_xpath("//*[contains(@name,'bbf7e47981234e48b958b9344a2e27db')]")).click().perform()
     ActionChains(context.browser).move_to_element(context.browser.find_element_by_xpath("//div[@class='esriMapsSidePanelButton esriMapsClose'][@title='Close']")).click().perform()
     UtilityHelperClass(context.browser).wait_interval(2)
 

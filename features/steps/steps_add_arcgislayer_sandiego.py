@@ -26,14 +26,15 @@ def step_select_the_arcgis_label(context):
 
 @when("I enter the text San Diego in the search box")
 def step_enter_text_san_diego(context):
-    textbx = context.browser.find_element_by_xpath("//*[contains(@id,'dijit_form_TextBox') and @type='text']")
+    textbx = context.browser.find_element_by_xpath("//table[@class='searchInputTable']/tbody/tr/td[1]/div/div/input")
     textbx.send_keys("San Diego")
     textbx.send_keys(Keys.ENTER)
     UtilityHelperClass(context.browser).selenium_wait_interval(1)
 
 @when("I select the san diego layer from the panel")
 def steps_select_san_diego_layer_from_panel(context):
-    context.browser.find_element_by_xpath(".//*[contains(@id,'dojox_mvc_Templated')]/div/div[2]/div[1]/div[3]/div[3]/div/input").click()
+    #context.browser.find_element_by_xpath(".//*[contains(@id,'dojox_mvc_Templated')]/div/div[2]/div[1]/div[3]/div[3]/div/input").click()
+    context.browser.find_element_by_xpath(".//*[contains(@name,'54a936f770de4b409b71901d1f0d9ff7')]").click()
     UtilityHelperClass(context.browser).selenium_wait_interval(2)
 
 @when("I close the reference layer panel")
